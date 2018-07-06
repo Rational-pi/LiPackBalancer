@@ -18,6 +18,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_spinBoxDestinationMatriceLineCount_valueChanged(int arg1)
 {
     ui->destinationMatrice->setRowCount(arg1);
+    ui->destinationMatrice->itemAt()
 }
 
 void MainWindow::on_spinBoxDestinationMatriceRowCount_valueChanged(int arg1)
