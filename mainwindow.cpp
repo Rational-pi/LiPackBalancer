@@ -6,9 +6,21 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::on_spinBoxDestinationMatriceLineCount_valueChanged(int arg1)
+{
+    ui->destinationMatrice->setRowCount(arg1);
+}
+
+void MainWindow::on_spinBoxDestinationMatriceRowCount_valueChanged(int arg1)
+{
+    ui->destinationMatrice->setColumnCount(arg1);
 }
